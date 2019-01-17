@@ -6,7 +6,7 @@ You should have node 8.9 or later one as it may give problem with earlier node v
 ## Development server
 To Run locally follow below steps
 1. Git Clone or download the App 
-2.  run npm install
+2.  run npm install (under CarrouselAppRepo\carouselApp folder)
 3. run ng serve browse http://localhost:4200/
 
 
