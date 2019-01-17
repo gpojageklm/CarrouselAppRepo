@@ -1,0 +1,47 @@
+<div class="light carousel-theme">
+  <div class="content-carousel">
+    <!-- Topbar to display  Logo-->
+    <div class="flex-section topbar">
+      <qrc-topbar></qrc-topbar>
+    </div>
+
+    <!-- Header to display Header Text-->
+    <div class="flex-section header-carousel">{{carouselHeader}}</div>
+
+    <!--  Main Container for Slides and Arrows(Left and right arrows are specified with
+          unicode charectors &#60; and &#62 respectively;
+
+    -->
+    <div class="container">
+      <div class="flex-section carousel">
+        <div *ngIf="slides" class="slide">
+          <div *ngFor="let slide of slides; let i=index" class="indv-slide">
+            <div *ngIf="slide.active" class="img-container">
+              <div id="arrow-left" class="arrow-control" (click)="previousSlide()"><span>
+                  &#60;</span> </div> <div id="arrow-right" class="arrow-control" (click)="nextSlide()">
+                    <span>&#62;</span></div>
+                  <!--Responsive image display based on viewport breakpoint-->
+              <img  [srcset]="slide.srcset" [sizes]="slide.sizes" [src]="slide.default" alt="slide.alt">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicator Component
+           Indicator component with input and output bound property to handle change from
+           arrow click and get reflected to display active indicator value and also emit
+           selected slide as activated slide to this parent component on click
+      -->
+      <div class="flex-section indicator-container">
+        <qrc-indicator [slides]="slides" (slideChanged)="eventHandlerSlideChange($event)"></qrc-indicator>
+      </div>
+
+      <!-- Data  Component which display data for different slides -->
+      <div class="flex-section content">
+        <qrc-content [slides]="slides"></qrc-content>
+      </div>
+    </div>
+  </div>
+   <!-- Error Text display in case of issue with  geting slides -->
+  <div class="error">{{errorText}}</div>
+</div>

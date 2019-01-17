@@ -1,0 +1,22 @@
+/**
+ * generic font stack and default flexbox property styles
+ * so any css class can extend it 
+**/
+
+%font-common
+{
+    font-family:$font-stack;
+    font-weight:normal;
+    font-style:normal;
+    font-size:1rem;
+    line-height:1em;
+}
+
+%default-flex
+{
+    width: 100%;
+    height: 3.2em;
+    display: flex;  
+    justify-content: left;
+    align-items: center;
+}

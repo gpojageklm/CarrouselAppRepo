@@ -1,0 +1,33 @@
+@import "../../../styles/_carousel-style";
+
+ol{
+    padding:0px;
+}
+.carousel-indicators li{
+    width:.25em;
+    height:.25em;
+    margin:2px;
+     border:1px solid $color-light-slategray;
+    border-radius:.25em;
+    cursor:pointer;
+    background-color:$background-default-color;
+    display:inline-block;
+}
+
+.indiv-indicator {
+ display:inline-block;
+}
+
+.carousel-indicators .active {
+    background-color: $border-color;
+    border:1px solid $color-light-slategray;
+}
+
+/*disable click event for Indicator on mobile devices*/
+@media (max-width: 767px)
+{
+  .indiv-indicator
+  {
+   pointer-events: none;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../styles/_carousel-style";
+
+.data-container {
+    display:block;
+    .content-wrapper {        
+        padding:1em;
+        height:auto; 
+        @extend %font-common; 
+        text-align:left;
+        letter-spacing:.1em;        
+        .info-header {          
+        color:$color-dark-blue;       
+        width:100%;  
+        font-size:1.4rem;
+        line-height:1.3em;
+        font-weight:lighter;
+        }
+        .info-content {
+        width:100%; 
+        font-weight:500;
+        line-height:1.5em;        
+        padding:1em 0;
+        }
+        .info-link {                
+         width:100%; 
+         color:$font-color-default;
+         line-height:1em;
+         font-weight:700;
+         padding-bottom:1.5em;  
+         cursor:pointer;   
+        }  
+    }
+}
+
+@media (min-width: 48em) 
+{
+    .data-container .content-wrapper .info-header {          
+        color:$font-color-default;    
+        
+    }
+    
+}
+  
+
+

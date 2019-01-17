@@ -1,0 +1,18 @@
+
+/**
+ * default style for common html elements 
+**/
+html,body,div,p,h1,h2,ol,li,span,a,section,header{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    display:block;
+}
+body{
+    background-color:#fff;
+    font-style:normal;
+    font-weight:normal;
+    line-height:normal;
+    display:block;
+}

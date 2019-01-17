@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "sideBoxHeader": "236 destinations",
+        "sideBoxContent": "Looking for sun, sea and culture? Book flights to Alicante and y beaches or enjoy the many water discover this vibrant city on the Spanish Costa Blanca.",
+        "sideBoxInfoText": "more info >",
+        "srcset": "../../assets/images/carousel/soci1.png 280w",
+        "default": "../../assets/images/carousel/soci1.png",
+        "alt": "soci1_icon",
+        "sizes": "(max-width: 48em)  100vw,(max-width: 64em) calc(50vw +5em),520px",
+        "active": true
+    },
+    {
+        "id": "2",
+        "sideBoxHeader": "Best Deals!!",
+        "sideBoxContent": "Relax on one of the lovely sandy beaches or enjoy the many water sports activities available on the Mediterranean",
+        "sideBoxInfoText": "more info >",
+        "srcset": "../../assets/images/carousel/soci2.png 280w",
+        "default": "../../assets/images/carousel/soci2.png",
+        "alt": "soci2_icon",
+        "sizes": "(max-width: 48em)  100vw,(max-width: 64em) calc(50vw +5em),520px",
+        "active": false
+    },
+    {
+        "id": "3",
+        "sideBoxHeader": "Great Destinations",
+        "sideBoxContent": "We will provide you best offers to Book flights to Alicante and many water sports activities available on the Mediterraneane",
+        "sideBoxInfoText": "more info >",
+        "srcset": "../../assets/images/carousel/soci3.png 280w",
+        "default": "../../assets/images/carousel/soci3.png",
+        "alt": "soci3_icon",
+        "sizes": "(max-width: 48em)  100vw,(max-width: 64em) calc(50vw +5em),520px",
+        "active": false
+    },
+    {
+        "id": "4",
+        "sideBoxHeader": "Great offers!!",
+        "sideBoxContent": "We will provide you best offers to Book flights to Alicante and discover this vibrant city on the Spanish Costa  ",
+        "sideBoxInfoText": "more info >",
+        "srcset": "../../assets/images/carousel/soci4.png 280w",
+        "default": "../../assets/images/carousel/soci4.png",
+        "alt": "soci4_icon",
+        "sizes": "(max-width: 48em)  100vw,(max-width: 64em) calc(50vw +5em),520px",
+        "active": false
+    },
+    {
+        "id": "5",
+        "sideBoxHeader": "Holiday offers!!",
+        "sideBoxContent": "Enjoy holiday  offers to Book flights to Alicante and discover this vibrant city on the Spanish Costa  ",
+        "sideBoxInfoText": "more info >",
+        "srcset": "../../assets/images/carousel/soci5.png 280w",
+        "default": "../../assets/images/carousel/soci5.png",
+        "alt": "soci5_icon",
+        "sizes": "(max-width: 48em)  100vw,(max-width: 64em) calc(50vw +5em),520px",
+        "active": false
+    }
+]

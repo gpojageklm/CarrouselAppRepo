@@ -1,0 +1,159 @@
+@import "../../styles/_carousel-style";
+@include carouseltheme("light",$background-default-color,none);
+@include carouseltheme("dark",$background-dark-blue,flex);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.flex-section{
+ @extend %default-flex;
+}
+
+.content-carousel
+{
+    width:100%;
+    background-color: $background-default-color;
+    .topbar {
+        border-bottom: 1px solid $border-color;
+    }
+    .header-carousel {
+        @extend %font-common;
+        font-family:"Montserrat|Signika+Negative";
+        font-size:1rem;
+        text-transform: capitalize;
+    }
+}
+
+.container {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    .carousel {
+        height:auto;
+        display:flex;
+        width:100%;
+        flex-direction: column;
+        justify-content:inherit;
+        align-items: inherit;
+        .slide {
+            .img-container {
+                display:block;
+                position:relative;
+                .arrow-control {
+                    position: absolute;
+                    top: calc(50% - 1em);
+                    width:1.25em;
+                    height:1.25em;
+                    cursor:pointer;
+                    span {
+                      font-size:1.5rem;
+                      line-height:1em;
+                      font-weight:normal;
+                      font-style:normal;
+                      color:$arrow-color;
+                      text-shadow:0 0 5px rgba(0,0,0,.7);
+                    }
+                }
+                img {
+                 max-width:100%;
+                 display:block;
+                 height:auto;
+                }
+            }
+        }
+    }
+    .indicator-container {
+        height:1.25em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+            height: auto;
+            display:flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color:$background-default-color;
+    }
+}
+
+#arrow-left {
+    left: .5em;
+}
+#arrow-right {
+    right: 0px;
+    float:right;
+}
+.error {
+  color:$error-text-color;
+  text-align:center;
+}
+
+
+@media only screen and (min-width: 48em) {
+    .container {
+        padding:1.5em 2.5em 0 2.5em;
+        .carousel,.content {
+            width: 50%;
+        }
+        .carousel {
+            display:flex;
+            .slide {
+                display:flex;
+                flex:1;
+                align-self: center;
+                .indv-slide {
+                    display:flex;
+                    .img-container {
+                        display:flex;
+                        flex-direction: column;
+                        flex:1;
+                        justify-content: stretch;
+                        align-items:flex-end;
+                        img {
+                            display:flex;
+                            flex:1;
+                            height:auto;
+                        }
+                    }
+                }
+            }
+        }
+        .indicator-container {
+                display:flex;
+                justify-content: center;
+                align-self:flex-end;
+                order:2;
+                width:50%;
+        }
+        .content {
+                order:1;
+                height:auto;
+                align-items: stretch;
+        }
+
+    }
+}
+
+@media only screen and (min-width: 64em)  {
+    .content-carousel {
+      /*carousel width will be max 1024px for higher viewport width */
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+  /*reset background to white color when toggle and view changed to mobile*/
+@media (max-width: 767px)
+{
+    .container {
+        background-color: $background-default-color;
+    }
+
+}
+
+
+

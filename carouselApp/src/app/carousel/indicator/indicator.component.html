@@ -1,0 +1,7 @@
+<div *ngIf="slides">
+  <!--Container for indicators.Indicator set to active based on active slide-->
+  <ol class="carousel-indicators" [hidden]="slides.length <= 1">
+    <li class="indiv-indicator" *ngFor="let slide of slides;let i=index" [class.active]="slide.active === true"
+      (click)="selectSlide(i)"></li>
+  </ol>
+</div>

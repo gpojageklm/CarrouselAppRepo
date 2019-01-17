@@ -1,0 +1,38 @@
+/**
+ * mixin for carousel to switch between light and dark theme
+ * theme-name:accepts light or dark as values
+ * container-bg: background color for container
+ * header-display: display value for header  
+**/
+@mixin carouseltheme($theme-name,$container-bg,$header-display){
+  .#{$theme-name}{
+      .content-carousel {            
+          border:1px solid  $border-color;
+          .topbar {
+              display:flex;
+          }.header-carousel {
+             display:flex; 
+             color: $header-text-color-sm;
+             padding-left:.5em;
+          }            
+      }
+      @media only screen and (min-width: 48em) {
+          .content-carousel {
+              border:0;
+              .topbar {
+                  display:none;
+              }.header-carousel {
+                 display:$header-display; 
+                 color: $header-text-color-bg-lg;
+                 padding-left:2.5em;
+                 text-transform: none;
+              }
+              .container {
+                  background-color:$container-bg;
+              }
+          }
+      }
+
+  }
+}
+
